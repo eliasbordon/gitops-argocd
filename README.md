@@ -5,12 +5,11 @@ Este respostoria tiene como finalidad el instalar y e configurar argoCD para pod
 ![alt text](./img/Diagrama.png)
 
 ## Tabla de Contenidos
-- [Creacion aplicacion helm](#creando-aplicacion-helm)
-- [Crear Charts de Dependencia](#crear-charts-de-dependencia)
-- [Configurando chart de api-nestjs y mongoDB](#configurando-chart-de-api-nestjs-y-mongodb)
+- [Instalar ArgoCD](#1-instalar-argocd)
+- [Ingresar a argo](#2-ingresar-a-argo)
 
 
-## Instalar ArgoCD
+## 1. Instalar ArgoCD
 
 Primero vamos a instlar argoCD dentro de nuetras cluster
 
@@ -78,7 +77,7 @@ Si ingresamos con la ip de nuestro cluster y el puerto que nos indica (en mi cas
 ![alt text](./img/ArgoCD.png)
 
 
-## Ingresar a argo
+## 2. Ingresar a argo
 
 El usuario predetermina de argo es "admin", pero para obtener la password debemos sacarla del su secret en kubernetes.
 Para esto vamos a utilizar el siguente comando, siempre parado sobre el namesapce argocd
